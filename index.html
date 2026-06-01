@@ -32,7 +32,7 @@
         <div class="hero-content">
             <h2>Welcome to CloudKitchen</h2>
             <p>Experience the finest food delivered to your doorstep</p>
-            <button class="btn btn-primary">Order Now</button>
+            <button class="btn btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">Order Now</button>
         </div>
     </section>
 
@@ -49,7 +49,7 @@
                         <span class="price">₹399</span>
                         <span class="rating">⭐ 4.8</span>
                     </div>
-                    <button class="btn btn-secondary">Add to Cart</button>
+                    <button class="btn btn-secondary" onclick="addToCart('Spicy Biryani', 399)">Add to Cart</button>
                 </div>
                 <div class="featured-card">
                     <div class="featured-image" style="background: linear-gradient(135deg, #4ECDC4, #44A08D);"></div>
@@ -59,7 +59,7 @@
                         <span class="price">₹349</span>
                         <span class="rating">⭐ 4.7</span>
                     </div>
-                    <button class="btn btn-secondary">Add to Cart</button>
+                    <button class="btn btn-secondary" onclick="addToCart('Grilled Chicken', 349)">Add to Cart</button>
                 </div>
                 <div class="featured-card">
                     <div class="featured-image" style="background: linear-gradient(135deg, #F7DC6F, #F8B88B);"></div>
@@ -69,7 +69,7 @@
                         <span class="price">₹299</span>
                         <span class="rating">⭐ 4.6</span>
                     </div>
-                    <button class="btn btn-secondary">Add to Cart</button>
+                    <button class="btn btn-secondary" onclick="addToCart('Paneer Tikka', 299)">Add to Cart</button>
                 </div>
             </div>
         </div>
