@@ -111,6 +111,8 @@ function initializeMenu() {
 // Display menu items
 function displayMenuItems(items) {
     const menuGrid = document.getElementById('menuGrid');
+    if (!menuGrid) return;
+    
     menuGrid.innerHTML = '';
 
     items.forEach(item => {
