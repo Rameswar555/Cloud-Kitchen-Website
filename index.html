@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cloud Kitchen - Order delicious food online with fast delivery">
-    <title>Cloud Kitchen - Order Food Online</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>CloudKitchen - Your Food Delivery Partner</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <h1 class="logo">☁️ Cloud Kitchen</h1>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>☁️ CloudKitchen</h1>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html" class="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -30,49 +28,100 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Welcome to Cloud Kitchen</h2>
-            <p>Delicious Food, Fast Delivery, Amazing Experience</p>
-            <a href="menu.html" class="btn btn-primary">Order Now</a>
+            <h2>Welcome to CloudKitchen</h2>
+            <p>Experience the finest food delivered to your doorstep</p>
+            <button class="btn btn-primary">Order Now</button>
         </div>
     </section>
 
-    <!-- Featured Dishes -->
-    <section class="featured">
+    <!-- Featured Dishes Section -->
+    <section id="featured" class="featured-section">
         <div class="container">
-            <h2 class="section-title">Featured Dishes</h2>
-            <div class="dishes-grid" id="featured-dishes">
-                <!-- Featured dishes will be loaded here by JavaScript -->
+            <h2 class="section-title">🍽️ Featured Dishes</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="featured-image" style="background: linear-gradient(135deg, #FF6B6B, #FF8E72);"></div>
+                    <h3>Spicy Biryani</h3>
+                    <p>Aromatic basmati rice with tender meat and exotic spices</p>
+                    <div class="price-rating">
+                        <span class="price">₹399</span>
+                        <span class="rating">⭐ 4.8</span>
+                    </div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-image" style="background: linear-gradient(135deg, #4ECDC4, #44A08D);"></div>
+                    <h3>Grilled Chicken</h3>
+                    <p>Marinated chicken grilled to perfection with herbs</p>
+                    <div class="price-rating">
+                        <span class="price">₹349</span>
+                        <span class="rating">⭐ 4.7</span>
+                    </div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-image" style="background: linear-gradient(135deg, #F7DC6F, #F8B88B);"></div>
+                    <h3>Paneer Tikka</h3>
+                    <p>Cubed paneer marinated and grilled with vegetables</p>
+                    <div class="price-rating">
+                        <span class="price">₹299</span>
+                        <span class="rating">⭐ 4.6</span>
+                    </div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="why-us">
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
         <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3>Fast Delivery</h3>
-                    <p>Quick and reliable delivery to your doorstep</p>
+            <h2 class="section-title">📋 Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="biryanis">Biryanis</button>
+                <button class="category-btn" data-category="curries">Curries</button>
+                <button class="category-btn" data-category="tandoori">Tandoori</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">📞 Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Food Street, Culinary City, CC 12345</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📱 Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>✉️ Email</h3>
+                        <p>info@cloudkitchen.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>⏰ Hours</h3>
+                        <p>Mon - Sun: 10:00 AM - 11:00 PM</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👨‍🍳</div>
-                    <h3>Fresh Food</h3>
-                    <p>Prepared fresh daily by our expert chefs</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Affordable Prices</h3>
-                    <p>Best quality at competitive prices</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⭐</div>
-                    <h3>Customer Satisfaction</h3>
-                    <p>Highly rated by thousands of happy customers</p>
-                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
@@ -82,15 +131,15 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>About Us</h4>
-                    <p>Cloud Kitchen brings you the best food delivery experience with fresh, delicious meals delivered to your door.</p>
+                    <h4>CloudKitchen</h4>
+                    <p>Delivering happiness, one meal at a time.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -103,12 +152,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Cloud Kitchen. All rights reserved. | Developed by Rameswar555</p>
+                <p>&copy; 2024 CloudKitchen. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/utils.js"></script>
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
